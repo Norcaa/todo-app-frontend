@@ -1,0 +1,12 @@
+<div class="tasks-container" >
+  <h1>Tasks:</h1>
+  <app-task-item
+      *ngFor="let TaskFace of tasks"
+      [task]="TaskFace"
+      (onToggleReminder)="toggleReminder(TaskFace)"
+  ></app-task-item>
+</div>
+
+
+
+
